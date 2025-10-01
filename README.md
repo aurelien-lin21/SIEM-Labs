@@ -59,7 +59,7 @@ J’ai ensuite exécuté cette commande directement sur la VM clone, ce qui a pe
 Depuis la **VM clone** vers la **VM principale** :
 
 ```bash
-ssh user@192.168.93.129
+ssh user@192.168.93.131
 # Entrer un mot de passe faux plusieurs fois
 ```
 
