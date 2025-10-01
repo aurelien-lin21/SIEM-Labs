@@ -29,7 +29,7 @@ curl -sO https://packages.wazuh.com/4.13/wazuh-install.sh
 sudo bash ./wazuh-install.sh -a
 ```
 
-- Vérifier l’état du manager et de l’agent locaux :
+Vérifier l’état du manager et de l’agent locaux :
 ```bash
 sudo systemctl status wazuh-manager
 sudo systemctl status wazuh-agent
@@ -41,7 +41,7 @@ sudo systemctl status wazuh-agent
 
 ### 3.1 Sur la VM principale (auto-agent déjà installé)
 L’installation précédente installe déjà un agent local.  
-Il apparaît par défaut dans l’interface comme **UbuntuUser** ou similaire.
+Il apparaît par défaut dans l’interface comme **UbuntuUser**.
 
 ### 3.2 Sur le clone (agent)
 
