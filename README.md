@@ -16,7 +16,7 @@ Mettre en place un mini-SIEM avec **Wazuh** sur une VM Ubuntu, connecter un agen
     - Même configuration que la principale
 - Connexion internet pour télécharger les paquets
 
-![Capture flux](flux.png)
+![Capture flux](settings.png)
 
 ---
 
@@ -48,7 +48,7 @@ Il apparaît par défaut dans l’interface comme **UbuntuUser** ou similaire.
 Depuis l’interface Wazuh (Manager UI), j’ai généré la commande d’installation de l’agent.  
 J’ai ensuite exécuté cette commande directement sur la VM clone, ce qui a permis d’enregistrer l’agent automatiquement auprès du manager.
 
-![Capture flux](flux.png)
+![Capture flux](agent.png)
 
 ---
 
@@ -65,7 +65,7 @@ ssh user@192.168.93.129
 
 Dans Wazuh, une alerte apparaît dans :
 
-![Capture flux](flux.png)
+![Capture flux](alerts.png)
 
 ### 4.2 Simulation d’attaque 2 – Création de fichier suspect
 
@@ -77,7 +77,7 @@ sudo touch /usr/bin/test_malware
 Wazuh détecte la création de fichiers potentiellement malveillants.
 Ces événements apparaissent également en Medium Severity.
 
-![Capture flux](flux.png)
+![Capture flux](files.png)
 
 ---
 
